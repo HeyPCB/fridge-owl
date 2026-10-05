@@ -1,0 +1,13 @@
+{
+ "slug": "fridge-owl",
+ "title": "Hoot, the fridge reminder owl",
+ "hook": "The fridge owl that blinks at you until you've taken your meds and had your water.",
+ "intro": "Hoot is a yellow owl-shaped fridge magnet with two reminders. Its left wing is a button marked \"meds\", its right wing \"water\". Press a wing when you have done the thing: that eye glows and its timer restarts. When the reminder comes due again (meds every 24 h or 12 h, water every 2 h), that orange LED eye blinks until you press. An ATtiny412 sleeps in power-down between one-second RTC ticks, so a CR2032 lasts about 14 months of typical use. Gold ENIG eye rings and beak on yellow mask; magnets go on the flat back.",
+ "what": [
+  "**Reminders:** meds (left wing, left eye) every 24 h, or 12 h by holding the wing 3 s; water (right wing, right eye) every 2 h.",
+  "**Due:** that eye flashes every 2 s; after an hour unanswered it dozes to one flash every 10 s until a wing is pressed.",
+  "**MCU:** ATtiny412 in power-down, woken once a second by the RTC and at once by a wing (PA2/PA6, the fully asynchronous pins); UPDI pads on the chin.",
+  "**Power:** one CR2032 in a Keystone 3034 holder; about 17.5 µA on a typical day (see SPEC.md).",
+  "**Mounting:** two 8 x 2 mm disc magnets on the rings printed on the back."
+ ]
+}

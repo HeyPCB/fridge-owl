@@ -1,0 +1,94 @@
+{
+ "batch": 100,
+ "rows": [
+  {
+   "refs": "BT1",
+   "value": "CR2032",
+   "qty": 1,
+   "lcsc": "C5213768",
+   "mpn": "3034TR",
+   "class": "extended",
+   "unit_usd": 0.3602,
+   "line_usd": 0.3602,
+   "stock": 2321,
+   "read_at": "2026-10-05"
+  },
+  {
+   "refs": "C1",
+   "value": "10uF",
+   "qty": 1,
+   "lcsc": "C15850",
+   "mpn": "CL21A106KAYNNNE",
+   "class": "basic",
+   "unit_usd": 0.0773,
+   "line_usd": 0.0773,
+   "stock": 3505306,
+   "read_at": "2026-10-05"
+  },
+  {
+   "refs": "C2",
+   "value": "100nF",
+   "qty": 1,
+   "lcsc": "C14663",
+   "mpn": "CC0603KRX7R9BB104",
+   "class": "basic",
+   "unit_usd": 0.0106,
+   "line_usd": 0.0106,
+   "stock": 12618106,
+   "read_at": "2026-10-05"
+  },
+  {
+   "refs": "D1,D2",
+   "value": "Orange",
+   "qty": 2,
+   "lcsc": "C965800",
+   "mpn": "XL-1608UOC-06",
+   "class": "extended",
+   "unit_usd": 0.0071,
+   "line_usd": 0.0142,
+   "stock": 643688,
+   "read_at": "2026-10-05"
+  },
+  {
+   "refs": "R1,R2",
+   "value": "220",
+   "qty": 2,
+   "lcsc": "C22962",
+   "mpn": "0603WAF2200T5E",
+   "class": "basic",
+   "unit_usd": 0.0014,
+   "line_usd": 0.0028,
+   "stock": 1209105,
+   "read_at": "2026-10-05"
+  },
+  {
+   "refs": "SW1,SW2",
+   "value": "TS-1187A",
+   "qty": 2,
+   "lcsc": "C318884",
+   "mpn": "TS-1187A-B-A-B",
+   "class": "basic",
+   "unit_usd": 0.0152,
+   "line_usd": 0.0304,
+   "stock": 1683297,
+   "read_at": "2026-10-05"
+  },
+  {
+   "refs": "U1",
+   "value": "ATtiny412",
+   "qty": 1,
+   "lcsc": "C1337190",
+   "mpn": "ATTINY412-SSNR",
+   "class": "extended",
+   "unit_usd": 0.506,
+   "line_usd": 0.506,
+   "stock": 2638,
+   "read_at": "2026-10-05"
+  }
+ ],
+ "unpriced": [],
+ "parts_usd": 1.002,
+ "extended_parts": 3,
+ "extended_fee_per_board_usd": 0.09,
+ "total_usd": 1.092
+}

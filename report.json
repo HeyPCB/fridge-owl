@@ -1,0 +1,494 @@
+{
+  "parts": {
+    "bound": 10,
+    "unsourced": 0,
+    "conflicts": 0,
+    "refs_by_status": {
+      "bound": [
+        "BT1",
+        "C1",
+        "U1",
+        "C2",
+        "D1",
+        "R1",
+        "D2",
+        "R2",
+        "SW1",
+        "SW2"
+      ],
+      "unsourced": [],
+      "conflict": []
+    },
+    "not_in_bom": [],
+    "extended_distinct": [
+      "C1337190",
+      "C5213768",
+      "C965800"
+    ],
+    "extended_fee_usd": 9.0,
+    "findings": [
+      {
+        "code": "jlcpcb_extended_parts",
+        "severity": "info",
+        "detail": "3 distinct Extended parts, about $9 in JLC loading fees",
+        "fix": "swap an Extended part for a Basic one where the table lists one"
+      }
+    ],
+    "table": "lcsc_pinned.json",
+    "table_source": "HeyPCB runner/cache/jlcparts/cache.sqlite3, table jlc_components, queried 2026-09-26. Each row's `snapshot` is that row's fetched_at."
+  },
+  "compose": {
+    "components": 13,
+    "nets": 9,
+    "noConnects": [
+      "U1.3"
+    ],
+    "ran": true,
+    "seconds": 0.3
+  },
+  "schematic": {
+    "paper": "A3",
+    "file": "fridge_owl.kicad_sch",
+    "ran": true,
+    "seconds": 0.7
+  },
+  "erc": {
+    "ran": true,
+    "errors": 0,
+    "warnings": 0,
+    "types": [],
+    "seconds": 0.6
+  },
+  "netlist": {
+    "ok": true,
+    "missing": [],
+    "extra": [],
+    "differ": [],
+    "nets": 9,
+    "ran": true,
+    "seconds": 0.2
+  },
+  "board": {
+    "footprints": 13,
+    "outline_mm": [
+      50.0,
+      62.0
+    ],
+    "stackup": {
+      "copper": 2,
+      "layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "planes": {},
+      "plane_layers": [],
+      "signal_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "dfm_profile": "jlcpcb_2layer"
+    },
+    "art": {
+      "items": 26,
+      "shapes": 393,
+      "keepouts": 4,
+      "qr": 1,
+      "by_layer": {
+        "F.Cu": 3,
+        "F.Mask": 3,
+        "F.SilkS": 251,
+        "B.SilkS": 136
+      }
+    },
+    "finish": {
+      "mask": "Yellow",
+      "silk": "Black",
+      "copper": "ENIG"
+    },
+    "ran": true,
+    "seconds": 0.3
+  },
+  "place": {
+    "parts": 13,
+    "log": [
+      "D1 -> (16.60, 22.50) rot 180 : rung 0 lock: left eye",
+      "D2 -> (33.40, 22.50) rot 0 : rung 0 lock: right eye",
+      "R1 -> (22.80, 17.20) rot 0 : rung 0 lock: eye resistor, under the MCU",
+      "R2 -> (27.20, 17.20) rot 0 : rung 0 lock: eye resistor, under the MCU",
+      "U1 -> (25.00, 12.80) rot 0 : rung 0 lock: MCU on the forehead, between the tufts",
+      "C2 -> (18.80, 13.00) rot 0 : rung 0 lock: bypass, beside VDD (pin 1)",
+      "C1 -> (31.20, 13.00) rot 0 : rung 0 lock: reservoir, mirrored on the other side",
+      "SW1 -> (9.60, 40.00) rot 90 : rung 0 lock: left wing: meds",
+      "SW2 -> (40.40, 40.00) rot 90 : rung 0 lock: right wing: water",
+      "BT1 -> (25.00, 41.60) rot 0 : rung 0 lock: the cell in the belly",
+      "TP1 -> (22.46, 53.60) rot 0 : rung 0 lock: UPDI pads (VCC, UPDI, GND)",
+      "TP2 -> (25.00, 53.60) rot 0 : rung 0 lock: UPDI pads (VCC, UPDI, GND)",
+      "TP3 -> (27.54, 53.60) rot 0 : rung 0 lock: UPDI pads (VCC, UPDI, GND)"
+    ],
+    "ran": true,
+    "seconds": 0.1
+  },
+  "route": {
+    "before": 24,
+    "after": 0,
+    "open_by_net": {},
+    "fixes": [],
+    "passes": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "stats": {
+      "tracks": 105,
+      "vias": 13,
+      "length_mm": 379.9,
+      "length_by_layer_mm": {
+        "B.Cu": 86.5,
+        "F.Cu": 293.4
+      }
+    },
+    "layers": [
+      [
+        "F.Cu",
+        "signal"
+      ],
+      [
+        "B.Cu",
+        "signal"
+      ]
+    ],
+    "ladder": [
+      {
+        "rung": 1,
+        "tag": "1_fanout",
+        "classes": {},
+        "fanout": true,
+        "export": {
+          "poursWithheld": 0,
+          "keepoutsMirrored": 0,
+          "clearanceBumpedTo_mm": null,
+          "powerLayers": [],
+          "rewritten": [],
+          "pinShapesOnPlanesDropped": 0,
+          "planes": 0,
+          "canonical": {
+            "images": 9,
+            "renamed": 0,
+            "nets": 10
+          },
+          "viaViaClearance_mm": null
+        },
+        "seconds": 3.3,
+        "ok": true,
+        "log": {
+          "nets": {},
+          "timedOut": false,
+          "noProgress": false,
+          "last_unrouted": 0,
+          "read": true
+        },
+        "widths": {
+          "snapped": 0,
+          "widened": 6,
+          "kept_narrow": 2,
+          "raised_to_min": 0,
+          "below_min_deleted": 0
+        },
+        "shorts_deleted": 0,
+        "keepout_deleted": 0,
+        "drc": {
+          "ran": true,
+          "electrical": 0,
+          "unconnected": 0,
+          "score": 0,
+          "types": {},
+          "shorts": 0,
+          "keepout": 0
+        },
+        "open": 0,
+        "open_by_net": {},
+        "stats": {
+          "tracks": 105,
+          "vias": 13,
+          "length_mm": 379.9,
+          "length_by_layer_mm": {
+            "B.Cu": 86.5,
+            "F.Cu": 293.4
+          }
+        }
+      },
+      {
+        "rung": 1,
+        "tag": "1_nofanout",
+        "classes": {},
+        "fanout": false,
+        "export": {
+          "poursWithheld": 0,
+          "keepoutsMirrored": 0,
+          "clearanceBumpedTo_mm": null,
+          "powerLayers": [],
+          "rewritten": [],
+          "pinShapesOnPlanesDropped": 0,
+          "planes": 0,
+          "canonical": {
+            "images": 9,
+            "renamed": 0,
+            "nets": 10
+          },
+          "viaViaClearance_mm": null
+        },
+        "seconds": 4.8,
+        "ok": true,
+        "log": {
+          "nets": {
+            "GND": 1
+          },
+          "timedOut": false,
+          "noProgress": true,
+          "last_unrouted": 1,
+          "read": true
+        },
+        "widths": {
+          "snapped": 0,
+          "widened": 0,
+          "kept_narrow": 0,
+          "raised_to_min": 0,
+          "below_min_deleted": 0
+        },
+        "shorts_deleted": 0,
+        "keepout_deleted": 0,
+        "drc": {
+          "ran": true,
+          "electrical": 0,
+          "unconnected": 0,
+          "score": 0,
+          "types": {},
+          "shorts": 0,
+          "keepout": 0
+        },
+        "open": 0,
+        "last_mile": {
+          "ok": true,
+          "openBefore": 1,
+          "openAfterModel": 0,
+          "closed": 1,
+          "tracks": 4,
+          "vias": 2,
+          "deadlineHit": false,
+          "limitations": [],
+          "seconds": 0.17,
+          "connections": [
+            {
+              "net": "GND",
+              "from": "C2.2",
+              "to": "BT1.2",
+              "outcome": "closed",
+              "vias": 2,
+              "lengthMm": 7.34
+            }
+          ],
+          "accepted": true,
+          "verdict": {
+            "beforeU": 1,
+            "afterU": 0,
+            "beforeE": 0,
+            "afterE": 0,
+            "introduced": 0,
+            "rekeyed": 0,
+            "introducedTypes": [],
+            "kind": "ok",
+            "accept": true
+          },
+          "kept_tracks": 4,
+          "kept_vias": 2
+        },
+        "open_by_net": {},
+        "stats": {
+          "tracks": 106,
+          "vias": 14,
+          "length_mm": 381.6,
+          "length_by_layer_mm": {
+            "B.Cu": 65.7,
+            "F.Cu": 315.9
+          }
+        }
+      }
+    ],
+    "kept_rung": "1_fanout",
+    "classes_routed": {},
+    "fanout_kept": true,
+    "fanout_compare": {
+      "1_fanout": {
+        "open": 0,
+        "score": 0,
+        "vias": 13,
+        "seconds": 3.3
+      },
+      "1_nofanout": {
+        "open": 0,
+        "score": 0,
+        "vias": 14,
+        "seconds": 4.8
+      }
+    },
+    "pad_vias": [],
+    "timedOut": false,
+    "noProgress": false,
+    "ran": true,
+    "seconds": 12.1
+  },
+  "pour": {
+    "plan": [
+      {
+        "layer": "B.Cu",
+        "net": "GND",
+        "priority": 0
+      }
+    ],
+    "open_before": 0,
+    "open_after_pour": 0,
+    "stitch_vias": 0,
+    "gnd_pour_layers": [
+      "B.Cu"
+    ],
+    "stitched": false,
+    "open_after_stitch": 0,
+    "island_repair_vias": 0,
+    "open_final": 0,
+    "zones": [],
+    "stats": {
+      "tracks": 105,
+      "vias": 13,
+      "length_mm": 379.9,
+      "length_by_layer_mm": {
+        "B.Cu": 86.5,
+        "F.Cu": 293.4
+      }
+    },
+    "ran": true,
+    "seconds": 0.3
+  },
+  "silk": {
+    "silk_clipped": 0,
+    "art_obstacles": 387,
+    "pin_labels": 0,
+    "silk_refused": [],
+    "words": 0,
+    "refs_seated": 0,
+    "refs_hidden": 13,
+    "title_offset_mm": [
+      0.0,
+      0.0
+    ],
+    "title_lines": 2,
+    "stitch_vias_displaced": 0,
+    "ran": true,
+    "seconds": 0.1
+  },
+  "drc": {
+    "ran": true,
+    "state": "fresh",
+    "board_sha": "bb0cc70f488bbb6acc65c5d9c3ae5bc2d746d6d2f571e76c01c9d891d85eacbe",
+    "errors": 0,
+    "warnings": 0,
+    "unconnected": 0,
+    "parity": 0,
+    "error_types": {},
+    "warning_types": {},
+    "repairs": [],
+    "seconds": 1.0
+  },
+  "dfm": {
+    "ran": true,
+    "profile": "jlcpcb_2layer",
+    "copper_layers": 2,
+    "errors": 0,
+    "warnings": 1,
+    "rows": [
+      {
+        "rule": "footprint_silk_width",
+        "severity": "warning",
+        "count": 61,
+        "min_mm": 0.12,
+        "note": "stock footprint silk down to 0.12 mm; the fab prints it at its 0.15 mm minimum"
+      }
+    ],
+    "qr": [
+      {
+        "text": "https://heypcb.ai/world/b/01a4dcf69333",
+        "layer": "B.Silkscreen",
+        "module_mm": 0.345,
+        "floor_mm": 0.3,
+        "ok": true
+      }
+    ],
+    "finish": {
+      "mask": "Yellow",
+      "silk": "Black",
+      "copper": "ENIG"
+    }
+  },
+  "fab": {
+    "gerbers": [
+      "fridge_owl-B_Cu.gbl",
+      "fridge_owl-B_Mask.gbs",
+      "fridge_owl-B_Paste.gbp",
+      "fridge_owl-B_Silkscreen.gbo",
+      "fridge_owl-Edge_Cuts.gm1",
+      "fridge_owl-F_Cu.gtl",
+      "fridge_owl-F_Mask.gts",
+      "fridge_owl-F_Paste.gtp",
+      "fridge_owl-F_Silkscreen.gto",
+      "fridge_owl-job.gbrjob"
+    ],
+    "copper_layers": 2,
+    "copper_gerbers": [
+      "fridge_owl-F_Cu.gtl",
+      "fridge_owl-B_Cu.gbl"
+    ],
+    "gerber_job": {
+      "file": "fridge_owl-job.gbrjob",
+      "layer_number": 2,
+      "board_thickness_mm": 1.6,
+      "copper_files": [
+        "fridge_owl-F_Cu.gtl",
+        "fridge_owl-B_Cu.gbl"
+      ],
+      "copper_mm": [
+        0.035,
+        0.035
+      ],
+      "dielectric_mm": [
+        1.51
+      ],
+      "dielectric": [
+        "FR4"
+      ]
+    },
+    "drill": [
+      "fridge_owl.drl",
+      "fridge_owl-drl_map.gbr"
+    ],
+    "zip": "fridge_owl_gerbers.zip",
+    "pos": "fridge_owl_pos.csv",
+    "cpl": "fridge_owl_cpl_jlc.csv",
+    "cpl_rotations_corrected": 1,
+    "bom": "fridge_owl_bom.csv",
+    "schematic_pdf": "fridge_owl_schematic.pdf",
+    "step": "fridge_owl.step",
+    "ready": true,
+    "blockers": [],
+    "drc_state": "fresh",
+    "ran": true,
+    "seconds": 1.5
+  }
+}

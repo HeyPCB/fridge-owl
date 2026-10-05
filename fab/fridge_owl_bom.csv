@@ -1,0 +1,8 @@
+"Reference","Value","Footprint","MPN","LCSC","Qty"
+"BT1","CR2032","Battery:BatteryHolder_Keystone_3034_1x20mm","3034TR","C5213768","1"
+"C1","10uF","Capacitor_SMD:C_0805_2012Metric","CL21A106KAYNNNE","C15850","1"
+"C2","100nF","Capacitor_SMD:C_0603_1608Metric","CC0603KRX7R9BB104","C14663","1"
+"D1,D2","Orange","LED_SMD:LED_0603_1608Metric","XL-1608UOC-06","C965800","2"
+"R1,R2","220","Resistor_SMD:R_0603_1608Metric","0603WAF2200T5E","C22962","2"
+"SW1,SW2","TS-1187A","Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A","TS-1187A-B-A-B","C318884","2"
+"U1","ATtiny412","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","ATTINY412-SSNR","C1337190","1"
